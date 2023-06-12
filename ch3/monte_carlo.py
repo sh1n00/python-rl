@@ -1,6 +1,6 @@
 import math
 from collections import defaultdict
-import gymnasium as gym
+import gym
 from el_agent import ELAgent
 from frozen_lake_util import show_q_value
 
@@ -52,7 +52,7 @@ class MonteCarloAgent(ELAgent):
 
 def train():
     agent = MonteCarloAgent(epsilon=0.1)
-    env = gym.make("FrozenLakeEasy-v1")
+    env = gym.make("FrozenLake-v1")
     agent.learn(env, episode_count=100000)
     show_q_value(agent.Q)
     agent.show_reward_log()
