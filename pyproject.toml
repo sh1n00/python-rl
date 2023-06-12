@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "python-rl"
+version = "0.1.0"
+description = ""
+authors = ["sh1n00 <rinjyou0031@toki.waseda.jp>"]
+readme = "README.md"
+packages = [{include = "python_rl"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.3"
+tornado = "^6.3.2"
+jupyter = "^1.0.0"
+pandas = "^2.0.2"
+matplotlib = "^3.7.1"
+tk = "^0.1.0"
+pyqt5 = "^5.15.9"
+gymnasium = "^0.28.1"
+gym = "^0.26.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
